@@ -1,8 +1,6 @@
 # Scala CPU
 
-This is work done as part of the B.Tech project at IIT Madras. The aim of the project is to explore resource-performance tradeoffs in existing hardware compilers.
-
-This repo contains a simple 5-stage RISC-V processor which comes in two variants: single-cycle and pipelined. You can refer to the `MyCPU.scala` file, which contains drivers to generate Verilog code for either variant.
+This is work done as part of the B.Tech project at IIT Madras. The aim of the project is to explore resource-performance tradeoffs in existing hardware compilers. This repo contains a simple 5-stage RISC-V processor which comes in two variants: single-cycle and pipelined.
 
 If you are new to this (like we were), here's a lightning-quick primer on all you need to know to use this:
 
@@ -12,14 +10,18 @@ If you are new to this (like we were), here's a lightning-quick primer on all yo
 	* You can learn how to use Chisel3 by:
 		+ going through the [bootcamp](https://github.com/freechipsproject/chisel-bootcamp/)
 		+ dissecting the [template project](https://github.com/freechipsproject/chisel-template)
-		+ referring to the [Chisel3 API](https://www.chisel-lang.org/api/latest/chisel3/index.html)
+		+ referring to the [Chisel3 cheatsheet](https://github.com/freechipsproject/chisel-cheatsheet) (open `main.tex` and download the PDF) and the [Chisel3 API](https://www.chisel-lang.org/api/latest/chisel3/index.html)
 	* Once you are comfortable with the basics, you can clone the [Chisel3 repo](https://github.com/chipsalliance/chisel3) to start working on your projects locally
 	* Simple install - clone above repo, `cd` into directory and enter `sbt 'publishAll'` in terminal
 	* In order to use Chisel3 locally, you will have to add it as a dependency in the `build.sbt` script of your project. Refer to the `build.sbt` of the template project (mentioned above) to see how they do it
 
 2. **Instruction Set Architecture** of CPU
 	* RV32I ISA is used in this project
-	* refer to the *riscv-spec.pdf* document found [here](https://riscv.org/technical/specifications/)
-	* here's a [convenient reference](https://web.archive.org/web/20200311232906/https://rv8.io/isa.html) for dataflow of the instructions
+	* Refer to the *riscv-spec.pdf* document found [here](https://riscv.org/technical/specifications/)
+	* Here's a [convenient reference](https://web.archive.org/web/20200311232906/https://rv8.io/isa.html) for dataflow of the instructions
+
+3. **Using this project**
+	* All modules used can be found at `src/main/scala`
+	* To generate HDL for single-cycle and pipelined processors, run `sbt 'runMain mycpu.SCCPU_Driver'` and `sbt 'runMain mycpu.PCPU_Driver'` respectively
 
 More details will be added as we will continue our work on building the testing apparatus.

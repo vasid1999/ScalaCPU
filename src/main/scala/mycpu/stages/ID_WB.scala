@@ -5,7 +5,7 @@ import mycpu.modules._
 
 class ID_WB(forwarding:Boolean) extends Module{
 	val io = IO(new Bundle{
-		// ---ID STAGE--- (add middle rd values for register forwarding)
+		// ---ID STAGE---
 		// InstDecoder
 		val instr            = Input(UInt(32.W))
 		
@@ -116,7 +116,7 @@ class ID_WB(forwarding:Boolean) extends Module{
 	io.rv1               := rf.io.rv1
 	io.rv2               := rf.io.rv2
 	
-	// Register forwarding
+// Register forwarding
 	if(forwarding){
 		io.forwarding_stall := false.B
 		when(id.io.rs1===0.U){
