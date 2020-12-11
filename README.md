@@ -13,7 +13,7 @@ Chisel3 is a hardware construction language embedded within the Scala language. 
 		+ dissecting the [template project](https://github.com/freechipsproject/chisel-template)
 		+ referring to the [Chisel3 cheatsheet](https://github.com/freechipsproject/chisel-cheatsheet) (open `main.tex` and download the PDF) and the [Chisel3 API](https://www.chisel-lang.org/api/latest/chisel3/index.html)
 	* Once you are comfortable with the basics, you can clone the [Chisel3 repo](https://github.com/chipsalliance/chisel3) to start working on your projects locally
-	* Simple install - clone above repo, `cd` into directory and enter `sbt 'publishAll'` in terminal
+	* Simple install - clone above repo, `cd` into directory and enter `sbt 'publishLocal'` in terminal
 	* In order to use Chisel3 locally, you will have to add it as a dependency in the `build.sbt` script of your project. Refer to the `build.sbt` of the template project (mentioned above) to see how they do it
 
 2. **Instruction Set Architecture of CPU**
@@ -25,4 +25,4 @@ Chisel3 is a hardware construction language embedded within the Scala language. 
 	* All modules used can be found at `src/main/scala`
 	* To generate HDL for single-cycle and pipelined processors, run `sbt 'runMain mycpu.SCCPU_Driver'` and `sbt 'runMain mycpu.PCPU_Driver'` respectively
 
-More details will be added as we will continue our work on building the testing apparatus.
+More details will be added as we will continue our work on building the testing apparatus. We also plan to look into the RocketChip in-order core and see what changes we can make to the current design.

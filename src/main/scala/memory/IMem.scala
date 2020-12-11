@@ -1,4 +1,4 @@
-package mem
+package memory
 import chisel3._
 
 class IMem extends Module{
