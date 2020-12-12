@@ -25,4 +25,8 @@ Chisel3 is a hardware construction language embedded within the Scala language. 
 	* All modules used can be found at `src/main/scala`
 	* To generate HDL for single-cycle and pipelined processors, run `sbt 'runMain mycpu.SCCPU_Driver'` and `sbt 'runMain mycpu.PCPU_Driver'` respectively
 
+4. **Verifying functionaliy using simulation**
+	* Simulation can be carried out using tools in the `sim` directory
+	* As of now, Verilator is used to perform simulation
+
 More details will be added as we will continue our work on building the testing apparatus. We also plan to look into the RocketChip in-order core and see what changes we can make to the current design.

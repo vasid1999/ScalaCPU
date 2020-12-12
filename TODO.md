@@ -7,7 +7,8 @@
 	* Perform generation of both variants simultaneously
 
 3. **Testing issues**
-	* Add testing
+	* Add Chisel3-based testing
+	* Add tracing in Verilator simulation
 
 4. **Further developments**
 	* Add functionality for RISC-V extensions

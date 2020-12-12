@@ -9,7 +9,7 @@
 * `mem/` - contains sample IMEM and DMEM inputs
 
 ## Usage
-Copy the `MyCPU.v` file generated in the root directory (using `sbt`) into this directory, and run `make` in terminal to see a basic debug output of the CPU
+Generate the `MyCPU.v` file in the root directory using `sbt`, copy it into this directory, and run `make` in terminal to see a basic debug output of the CPU
 
 ## Resources on Verilator
 * [Installation](https://www.veripool.org/projects/verilator/wiki/Installing) and [manual](https://www.veripool.org/projects/verilator/wiki/Manual-verilator)
