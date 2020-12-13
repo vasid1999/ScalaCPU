@@ -1,0 +1,13 @@
+# generated HDL files
+MyCPU.*
+
+# sbt compilation outputs
+project/
+target/
+.bsp/
+
+# verilator outputs
+sim/verilator/obj_dir/
+
+# HDL files copied for verilator compilation
+sim/verilator/*.v
