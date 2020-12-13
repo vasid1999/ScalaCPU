@@ -8,6 +8,7 @@ target/
 
 # verilator compilation outputs
 sim/verilator/obj_dir/
+sim/verilator/trace.vcd
 
 # HDL files copied for verilator compilation
 sim/verilator/*.v
