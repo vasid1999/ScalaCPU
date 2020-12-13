@@ -1,6 +1,6 @@
 # Scala CPU
 
-This is work done as part of the B.Tech project at IIT Madras. The aim of the project is to explore resource-performance tradeoffs in existing hardware compilers. This repo contains a simple 5-stage RISC-V processor which comes in two variants: single-cycle and pipelined.
+This is work done as part of the B.Tech project at IIT Madras. The aim of the project is to explore resource-performance tradeoffs in existing hardware compilers. This repo contains Scala source code for a 5-stage RISC-V processor which comes in two variants: single-cycle and pipelined. Simulation code has also been added for Verilator.
 
 If you are new to this (like we were), here's a lightning-quick primer on all you need to know to use this:
 
@@ -28,5 +28,6 @@ Chisel3 is a hardware construction language embedded within the Scala language. 
 4. **Verifying functionaliy using simulation**
 	* Simulation can be carried out using tools in the `sim` directory
 	* As of now, Verilator is used to perform simulation
+	* The `README` file in the respective directories explain more about the tools and their usage
 
 More details will be added as we will continue our work on building the testing apparatus. We also plan to look into the RocketChip in-order core and see what changes we can make to the current design.

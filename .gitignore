@@ -6,7 +6,7 @@ project/
 target/
 .bsp/
 
-# verilator outputs
+# verilator compilation outputs
 sim/verilator/obj_dir/
 
 # HDL files copied for verilator compilation
