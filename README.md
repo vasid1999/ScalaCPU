@@ -5,8 +5,8 @@ This is work done as part of the B.Tech project at IIT Madras. The aim of the pr
 If you are new to this (like we were), here's a lightning-quick primer on all you need to know to use this:
 
 1. **Chisel3**\
-Chisel3 is a hardware construction language embedded within the Scala language. It is being developed by UCB-BAR and is used mainly to design RISC-V hardware generators.
-	* Basic knowledge of Scala syntax can be found on the [Scala website](https://www.scala-lang.org/), specifically the [Tour of Scala](https://docs.scala-lang.org/tour/tour-of-scala.html) (it will be needed since Chisel3 is essentially a Scala library specialized for hardware construction)
+Chisel3 is a hardware construction language embedded within the Scala programming language. It is being developed by UCB-BAR and is used mainly to design hardware generators.
+	* Basic knowledge of Scala syntax can be found on the [Scala website](https://www.scala-lang.org/), specifically the [Tour of Scala](https://docs.scala-lang.org/tour/tour-of-scala.html) (it will be needed since Chisel3 is essentially a Scala library specialized for hardware construction - no need to go too much into detail, you can learn as you go)
 	* Install and learn SBT - the Scala build tool, used to compile, run and test your Scala/Chisel3 project - by going through the [sbt by example](https://www.scala-sbt.org/1.x/docs/sbt-by-example.html) tutorial on the SBT website
 	* You can learn how to use Chisel3 by:
 		+ going through the [bootcamp](https://github.com/freechipsproject/chisel-bootcamp/)
@@ -18,12 +18,12 @@ Chisel3 is a hardware construction language embedded within the Scala language. 
 
 2. **Instruction Set Architecture of CPU**
 	* RV32I ISA is used in this project
-	* Refer to the *riscv-spec.pdf* document found [here](https://riscv.org/technical/specifications/)
+	* Refer to the *riscv-spec.pdf* document found [here](https://riscv.org/technical/specifications/) in the ISA Specification section
 	* Here's a [convenient reference](https://web.archive.org/web/20200311232906/https://rv8.io/isa.html) for dataflow of the instructions
 
 3. **Using this project**
 	* All modules used can be found at `src/main/scala`
-	* To generate HDL for single-cycle and pipelined processors, run `sbt 'runMain mycpu.SCCPU_Driver'` and `sbt 'runMain mycpu.PCPU_Driver'` respectively
+	* To generate HDL for single-cycle and pipelined processors, first compile the project using `sbt 'compile'`, and then run `sbt 'runMain mycpu.SCCPU_Driver'` and `sbt 'runMain mycpu.PCPU_Driver'` respectively
 
 4. **Verifying functionaliy using simulation**
 	* Simulation can be carried out using tools in the `sim` directory
