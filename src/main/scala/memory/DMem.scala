@@ -24,6 +24,6 @@ class DMem extends Module{
 	// data read
 	io.drdata := 0.U
 	for(i<-0 to 3){
-		io.drdata := io.drdata<<8 | dmem(i)(daddr_msb)
+		io.drdata := io.drdata<<8 | dmem(3-i)(daddr_msb)
 	}
 }
