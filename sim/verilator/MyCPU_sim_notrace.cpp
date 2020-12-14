@@ -107,7 +107,7 @@ int main(int argc,char **argv){
 }
 
 /*
-Hypothesis 1: (20201213_0005)
+Hypothesis 1:
 The way I understand it as of now, the simulator can only tell what's happening at the edge, not in between. So if clock is set to 1, any future evals will compute only what's happening at the edge till the clock is given a negedge
 
 Algo v1:
